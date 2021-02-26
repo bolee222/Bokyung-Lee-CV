@@ -95,10 +95,25 @@ strokes, sans-serif fonts are sans (without) these strokes.
     \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\CVPublication}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \makecell{#1} & #2 \\
+      \small#3 & \small #4 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\CVPub}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{p{0.85\linewidth}@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
 \newcommand{\CVSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \text{\small#1} & \text{\small #2} \\
+      \small{#1} & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -148,12 +163,10 @@ In Europe it is common to include a picture of ones self in the CV. Select which
 % Without picture
 \begin{center}
     \textbf{\Huge \scshape Bokyung Lee} \\ \vspace{1pt} %\scshape sets small capital letters, remove if desired
-    \small +1 123-456-7890 $|$ 
-    \href{mailto:you@provider.com}{\underline{you@provider.com}} $|$\\
-    % Be sure to use a professional *personal* email address
-    \href{https://linkedin.com/in/your-name-here}{\underline{linkedin.com/in/charles-rambo}} $|$
+    \small +1 647-570-5603 $|$ +82 10 3650 7644 \\
+    \href{mailto:bokyung.lee@autodesk.com}{bokyung.lee@autodesk.com} $|$    \href{https://boleeHCI.com}{https://boleeHCI.com} \\
     % you should adjust you linked in profile name to be professional and recognizable
-    \href{https://github.com/fizixmastr}{\underline{github.com/fizixmastr}}
+    \small Autodesk, 661 University Ave, Toronto, Ontario, Canada M5G 1M1
 \end{center}
 
 
@@ -186,20 +199,26 @@ information though). Whatever order you choose be consistent throughout.
 %      {Degree Achieved}{Years of Study}
 %      {Institution of Study}{Where it is located}
     \CVSubheading
-      {{Master of Science $|$ \emph{\small{Photonics}}}}{Aug. 2019 -- May 2021}
-      {University of Eastern Finland}{Joensuu, Finland}
+      {{Korea Advanced Institute of Science and Technology (KAIST)}}{Mar. 2015 -- Feb 2020}
+      {MA.\& Ph.D. of Engineering $|$ \emph{\small{Industrial Design}}}{Daejeon, South Korea}
+      \CVItemListStart
+        \CVItem{Embodied Design Toolkit for VR/AR}
+        \CVItem{Interactive Human Bodies in Design Tools}
+      \CVItemListEnd
     \CVSubheading
-      {{Bachelor of Arts $|$ \emph{\small{Major: Physics, Minor: Education}}}}{Aug. 2016 -- May 2018}
-      {Austin College}{Sherman, TX}
+      {{TU Delft}}{Sep. 2014 -- Feb 2015}
+      {M.A. Exchange Program $|$ \emph{\small{Department of Design Engineering}}}{Delft, Netherlands}
     \CVSubheading
-      {Associate of Liberal Sciences}{Aug. 2015 -- May 2016}
-      {North Lake College}{Irving, TX}
+      {{Aalto University}}{Jan. 2012 -- Aug 2012}
+      {Undergraduate Exchange Program $|$ \emph{\small{School of Science}}}{Helsinki, Finland}
+    \CVSubheading
+      {Korea Advanced Institute of Science and Technology (KAIST)}{Feb. 2009 -- Feb 2014}
+      {Bachelor of Engineering $|$ \emph{\small{Industrial Design \& Technology Management}}}{Daejeon, South Korea}
   \CVSubHeadingListEnd
 
 %-----WORK EXPERIENCE----------------------------------------------------------
 \begin{comment}
-try to briefly explain what you did and why it is relevant to the position you
-are seeking
+try to briefly explain what you did and why it is relevant to the position you are seeking
 \end{comment}
 
 \section{Work Experience}
@@ -211,87 +230,22 @@ are seeking
 %        \CVItem{Why it is important to this employer}
 %      \CVItemListEnd
     \CVSubheading
-      {Integration Engineering Intern}{June 2018 -- August 2019}
-      {Finisar Corp.}{Sherman, TX}
+      {Autodesk Research $|$ \emph{\small{Simulation, Optimization, and Systems Group}}}{Mar. 2020 -- current}
+      {Industrial Postdoctoral Fellow}{Toronto, Canada}
       \CVItemListStart
-        \CVItem{Worked in ISO 4 cleanroom developing applications to improve efficiency and creating specs}
-        \CVItem{Employed metrology and microscopy for failure analysis and developing process for wet etching}
-        \CVItem{Member of Emergency Response Team}
-      \CVItemListEnd
-    \CVSubheading
-      {Laboratory Assistant}{January 2016 -- July 2016}
-      {North Lake College}{Irving, TX}
-      \CVItemListStart
-        \CVItem{Inventoried and maintained Physics Department lab equipment}
-        \CVItem{Physics tutoring}
+        \CVItem{Human-centered simulation-driven design tools}
+        \CVItem{Virtual humans with agency for digital design tools}
+        \CVItem{Human-centered generative Design, Data-driven Design}
+        
     \CVItemListEnd
+    
     \CVSubheading
-      {Assistant Manager}{December 2006 -- August 2015}
-      {Sun \& Ski Sports}{Austin, TX}
+      {Autodesk Research $|$ \emph{\small{Complex Systems Group}}}{Nov. 2018 -- Aug. 2019}
+      {Research Intern}{Toronto, Canada}
       \CVItemListStart
-        \CVItem{Led a team of 20+ employees}
-        \CVItem{Ran social media, as well as all grassroots marketing}
+        \CVItem{Computer vision approach for human-building interactions}
+        \CVItem{Skeletonized ethnography tool}
       \CVItemListEnd
-  \CVSubHeadingListEnd
-
-%-----PROJECTS AND RESEARCH----------------------------------------------------
-\begin{comment}
-Ideally the title of the work should speak for what it is. However if you feel
-like you should explain more about why the project is applicable to this job,
-use item list as is shown in the work experience section.
-\end{comment}
-
-\section{Projects and Research}
-  \CVSubHeadingListStart
-%    \CVSubheading
-%      {Title of Work}{When it was done}
-%      {Institution you worked with}{unused}
-    \CVSubheading
-      {{Surface Plasmon Propagation in the Kretschmann-Raether Configuration} $|$ \emph{\small{Python}}}{Fall 2020}
-      {University of Eastern Finland}{}
-    \CVSubheading
-      {{Simulation of Vector Beams Through High Numerical Aperture Lens} $|$ \emph{\small{Python}}}{Fall 2020}
-      {University of Eastern Finland}{}
-    \CVSubheading
-      {Characterization of the Flame-S Spectrometer for Spectral Imaging Research}{Spring 2020}
-      {University of Eastern Finland}{}
-    \CVSubheading
-      {{Free Form Lens Systems for 3D Printing} $|$ \emph{\small{MATLAB, OpTaliX}}}{Spring 2019}
-      {University of Eastern Finland}{}
-    \CVSubheading
-      {Procedures for Plating and Wet-Etching in III-V Semiconductor Devices}{Summer 2019}
-      {Finisar Corp.}{}
-    \CVSubheading
-      {Photo-Filter Characterization for Photometric Identification of Be Stars}{Fall 2017}
-      {Austin College}{}
-    \CVSubheading
-      {Improved Calibrating Equations for Volumetric Soil Moisture Measurement}{Spring 2017}
-      {Austin College}{}
-    \CVSubheading
-      {{Product Design, and Manufacturing Using 3D Printing} $|$ \emph{\small{Autodesk 123D}}}{Fall 2016}
-      {Austin College}{}
-  \CVSubHeadingListEnd
-
-%-----CONFERENCES AND PRESENTATIONS--------------------------------------------
-\begin{comment}
-Again the title should have already been enough, but if it is necessary to add
-descriptions maintain the consistency from prior sections
-\end{comment}
-
-\section{Conferences and Presentations}
-  \CVSubHeadingListStart
-%    \CVSubheading % Example
-%      {Work Presented}{When}
-%      {Occasion}{}
-    \CVSubheading
-      {Photometric Filter Fidelity and Use for Be Star Identification}{November 2017}
-      {Austin College Physics Research Seminar}{}
-    \CVSubheading
-      {Reflectometry for Volumetric Soil Moisture Measurement}{May 2017}
-      {Austin College Atmospheric Physics Fair}{}
-    \CVSubheading
-      {Design and Manufacturing of Products using 3D Printing}{April 2017}
-      {Austin College Student Scholarship Conference}{}
   \CVSubHeadingListEnd
 
 %-----HONORS AND AWARDS--------------------------------------------------------
@@ -301,24 +255,136 @@ descriptions maintain the consistency from prior sections
 %      {What}{When}
 %      {Short Description}{}
     \CVSubheading
-      {Dean's List}{Fall 2017}
-      {Recognition for to 20\% of students in academics at Austin College}{}
+      {CSCW Best Paper Award}{2020}
+      {ACM Hum.-Comput. Interact. Computer Supported Cooperative Work and Social Computing.}{}
     \CVSubheading
-      {Noyce STEM Education Leadership Scholarship}{June 2017}
-      {Merit based grant for students pursuing education in STEM fields}{}
+      {CSCW Honorable Mention Award}{2019}
+      {ACM Hum.-Comput. Interact. Computer Supported Cooperative Work and Social Computing.}{}
     \CVSubheading
-      {Stephens Scholarship}{May 2017}
-      {Merit based scholarship to support international study experiences within Austin College}{}
+      {Gender Equality Pictogram Bronze Award}{2014}
+      {hosted by Choongchung City, Korea}{}
     \CVSubheading
-      {John D . Mosely Scholarship}{July 2016}
-      {Merit based scholarship requiring Austin College alumnus nomination}{}
+      {Location-Based Service (LBS) Web \& Application Contest}{2013}
+      {hosted by Korea Communication and Commissions $|$ organized by Korea Internet \& Security Agency}{}
     \CVSubheading
-      {Presidents List}{Spring 2016}
-      {Overall GPA above 3.8 at Austin College}{}
-    \CVSubheading
-      {Eagle Scout}{April 2006}
-      {Highest level of achievement within the Boy Scouts of America}{}
+      {Innoplolis Idea Contest Grand Prize}{2013}
+      {hosted by Ministry of Knowledge Economy of Korea}{}
   \CVSubHeadingListEnd
+  
+%-----HONORS AND AWARDS--------------------------------------------------------
+\section{Patents}
+  \CVSubHeadingListStart
+%    \CVSubheading %Example
+%      {What}{When}
+%      {Short Description}{}
+    \CVSubheading
+      {Furniture Design Apparatus Displaying Personalized Guide Information}{Jan 2018}
+      {Invention field: ICT/SW, KR-10-2018-0002957}{}
+  \CVSubHeadingListEnd
+
+
+%-----PROJECTS AND RESEARCH----------------------------------------------------
+\begin{comment}
+Ideally the title of the work should speak for what it is. However if you feel
+like you should explain more about why the project is applicable to this job,
+use item list as is shown in the work experience section.
+\end{comment}
+
+\section{Academic Achievements}    
+  \CVSubHeadingListStart
+%    \CVSubheading
+%      {Title of Work}{When it was done}
+%      {Institution you worked with}{unused}
+
+    \CVPub
+      {\underline{Bokyung Lee}, Michael Lee, Pan Zhang, Alexander Tessier, Daniel Saakes, Azam Khan., \textbf{Socio-Spatial Comfort: Using Vision-based Analysis to Inform User-Centred Human-Building Interactions}, Proc. ACM Hum.-Comput. Interact. 4, \textbf{\textit{CSCW3}}, Article 238 (December 2020), 33 pages.}{2020}
+      
+    \CVPub
+      {Jaeho Sung, \underline{Bokyung Lee}, Daniel Saakes, \textbf{PoseScape: Pose-based Analysis System for Long-term Observation Studies}, ACM \textbf{\textit{NordiCHI 2020}} poster}{}
+    
+    \CVPub
+      {\underline{Bokyung Lee}, Michael Lee, Pan Zhang, Alexander Tessier, Azam Khan., \textbf{An Empirical Study of How Socio-Spatial Formations are influenced by Interior Elements and Displays in an Office Context.} Proc. ACM Hum.-Comput. Interact. 3, \textbf{\textit{CSCW}}, Article 58.}{2019}
+    
+    \CVPub
+      {\underline{Bokyung Lee}, Michael Lee, Alexander Tessier, Azam Khan., Skeletonographer: Skeleton-based Digital Ethnography Tool, ACM \textbf{\textit{CSCW 2019}} demo}{}
+      
+    \CVPub
+      {Alexander Tessier, Simon Breslav, Kean Walmsley, Michael Lee, Hali Larsen, Jacky Bibliowicz, Pan Zhang, Liviu-Mihai Calin, \underline{Bokyung Lee}, Josh Cameron, Rhys Goldstein, and Azam Khan., \textbf{Occupancy Visualization towards Activity Recognition}, ACM \textbf{\textit{DFSH 2019}}}{}
+      
+    \CVPub
+      {\underline{Bokyung Lee}, Michael Lee, Alexander Tessier, Azam Khan., \textbf{Semantic Human Activity Annotation Tool Using Skeletonized Surveillance Videos}, ACM \textbf{\textit{Ubicomp 2019}} demo}{}
+      
+    \CVPub
+      {\underline{Bokyung Lee}, Taeil Jin, Sung-Hee Lee, Daniel Saakes., \textbf{SmartManikin: Virtual Humans with Agency for Design Tools}, ACM \textbf{\textit{CHI 2019}} full paper}{}
+      
+    \CVPub
+      {\underline{Bokyung Lee}, Sindy Wu, Maria Reyes, Daniel Saakes., \textbf{The Effect of Interruption Timings on Autonomous Height-Adjustable Desks that Responds to Task Changes}, ACM \textbf{\textit{CHI 2019}} full paper}{}
+
+    \CVPub
+      {\underline{Bokyung Lee}, Joongi Shin, Hyoshin Bae, Daniel Saakes., \textbf{Interactive and Situated Guidelines to Help Users Design a Personal Desk that Fits Their Bodies}, ACM \textbf{\textit{DIS 2018}} full paper}{2018}
+      
+    \CVPub
+      {\underline{Bokyung Lee}, Jiwoo Hong, Jaeheung Surh, Daniel Saakes., \textbf{Ori-mandu: Korean Dumpling into Whatever Shape You Want}, ACM \textbf{\textit{DIS 2017}} full paper (pictorial)}{2017}
+      
+    \CVPub
+      {\underline{Bokyung Lee}, Gyeol Han, Jundong Park, Daniel Saakes., \textbf{Consumer to Creator: How Households Buy Furniture to Inform Design and Fabrication Interfaces.}, ACM \textbf{\textit{CHI 2017}} full paper}{}
+      
+    \CVPub
+      {\underline{Bokyung Lee}, Jiwoo Hong, Jaeheung Surh, Daniel Saakes., \textbf{Ori-mandu: Korean Dumpling into Whatever Shape You Want}, ACM \textbf{\textit{CHI 2017}} video showcase}{}
+      
+    \CVPub
+      {Jundong Park, \underline{Bokyung Lee}, Gyeol Han, Daniel Saakes., \textbf{Two Mental Models of Non-Professional Design Process for Future Fabrication Interface.}, \textbf{\textit{HCI Korea 2017}} full paper}{}
+      
+    \CVPub
+      {\underline{Bokyung Lee}, Minjoo Cho, Daniel Saakes., \textbf{Posing and Acting as Input for Personalizing Furniture}, ACM \textbf{\textit{NordiCHI 2016}} full paper}{2016}
+      
+    \CVPub
+      {SeungRyoel Kim, \underline{Bokyung Lee}, Daniel Saakes.,\textbf{Gesture-based Trafficator to Improve Driver to Traffic Communication.}, \textbf{\textit{KSDS 2016}} Fall 2016 paper}{}
+      
+    \CVPub
+      {Foong-Yi Chia, \underline{Bokyung Lee}, Daniel Saakes., \textbf{Collaboration in the Living Room or How Couples Design Together}, ACM \textbf{\textit{NordiCHI 2016}} poster}{}
+      
+    \CVPub
+      {Minjoo Cho, \underline{Bokyung Lee}, Joonhee Min, Daniel Saakes., \textbf{Sketching in Virtual Reality for Rapid and Situated Idea Generation}, \textbf{\textit{KSDS 2015}} Fall paper}{2015}
+      
+    \CVPub
+      {\underline{Bokyung Lee}, Froukje Sleeswijk Visser, Daniel Saakes., \textbf{Online User Reviews as a Design Resource}, \textbf{\textit{IASDR}} 2015 full paper}{}
+      
+    \CVPub
+      {Shin H-S (Felix), \underline{Bokyung Lee}, Daniel Saakes., \textbf{TagRadar: Locating Objects Using a Smart Phone Accessory}, ACM \textbf{\textit{Ubicomp}}/ISWC 2015 Demos}{}
+  \CVSubHeadingListEnd
+
+
+ 
+ 
+%-----CONFERENCES AND PRESENTATIONS--------------------------------------------
+\begin{comment}
+Again the title should have already been enough, but if it is necessary to add
+descriptions maintain the consistency from prior sections
+\end{comment}
+
+\section{Invited Talks}
+  \CVSubHeadingListStart
+%    \CVSubheading % Example
+%      {Work Presented}{When}
+%      {Occasion}{}
+    \CVSubheading
+      {HCI Korea Panel Talk: Panel for Future of Digital Fabrication}{Jan 2021}
+      {Title: Not just helping you design easily, but help you design what you want.}{}
+    \CVSubheading
+      {ID KAIST Ph.D. Colloquium Talk}{Jul 2017}
+      {Doing a Ph.D. in HCI \& Design Research}{}
+    \CVSubheading
+      {Autodesk Research Talk}{Nov 2018}
+      {Embodied Design Tools for Digital Fabrication}{}
+    \CVSubheading
+      {CS374: Introduction to HCI Research Talk}{Jun. 2018}
+      {Design-driven HCI Research}{}
+    \CVSubheading
+      {HCI KAIST Research Talk}{Apr 2017}
+      {Consumer to Creator: Understanding how people buy furniture to inform fabrication tools}{}
+  \CVSubHeadingListEnd
+
 
 %-----TEACHING EXPERIENCE------------------------------------------------------
 \begin{comment}
@@ -331,32 +397,72 @@ Remember to tailor the resume for to the position.
 %    \CVSubheading
 %      {What}{When}
 %      {School}{Where}
-    \CVSubheading
-      {High School Physics (11 Weeks Teaching/Observing)}{Fall 2017}
-      {Denison High School}{Denison, TX}
-    \CVSubheading
-      {High School Calculus (11 Weeks Teaching/Observing)}{Fall 2017}
-      {Denison High School}{Denison, TX}
-    \CVSubheading
-      {High School Geometry (9 Weeks Teaching/Observing)}{Spring 2016}
-      {Sherman High School}{Sherman, TX}
+    \CVSubSubheading
+      {Digital Design Fabrication (teaching assistant)}{Fall 2017}
+    \CVSubSubheading
+      {ID KAIST Academic Counselor}{Spring 2017}
+    \CVSubSubheading
+      {Digital Design Fabrication (teaching assistant)}{Fall 2016}
+    \CVSubSubheading
+      {Integrated Design – Undergraduate graduation project}{Spring 2016}
+    \CVSubSubheading
+      {Digital Design Fabrication (teaching assistant)}{Fall 2015}
+    \CVSubSubheading
+      {Space Design (teaching assistant)}{Spring 2015}
+    \CVSubSubheading
+      {Introduction to Industrial Design (teaching assistant)}{Spring 2014}
   \CVSubHeadingListEnd
 
-%-----COMMUNITY INVOLVEMENT----------------------------------------------------
-\section{Community Involvement}
+%-----PROJECT EXPERIENCE----------------------------------------------------
+\section{Project Experience}
   \CVSubHeadingListStart
-%    \CVSubheading %Example
-%      {What you did}{When you worked there}
-%      {Who you worked for}{Where they are located}
-    \CVSubheading
-      {Austin College Community Tutors}{Fall 2017 -- Fall 2018}
-      {Free tutoring for local students in science and mathematics}{Sherman, TX}
-    \CVSubheading
-      {River Legacy Nature Center}{September 2015 -- August 2016}
-      {Provided assistance for various youth science education programs}{Arlington, TX}
-    \CVSubheading
-      {Back on My Feet Run Club}{April 2014 -- August 2015}
-      {Helping to reestablish homeless persons in the community}{Austin, TX}
+    \CVSubSubheading
+      {Designing Occupant Simulation System for Digital Design Evaluation}{2020-current}
+    \CVSubSubheading
+      {Vision-based Social Interaction Analysis for Human-Centered Architecture}{2020-current}
+    \CVSubSubheading
+      {Design Toolkits for Everybody with VR/AR Technology $|$ \textit{project manager}}{2015-2018}
+    \CVSubSubheading
+      {AI/AR Personal Health Recommendations for Mobile Computing at Home $|$ \textit{project manager}}{2018}
+    \CVSubSubheading
+      {AI/AR Personal Health Recommendations for Mobile Computing at Home $|$ \textit{project lead}}{2018}
+    \CVSubSubheading
+      {Gesture-based Trafficator to Enhance Human-Automobile Interaction $|$ \textit{teaching assistant}}{2017}
+    \CVSubSubheading
+      {Augmented Reality Interface for the Internet of Things $|$ \textit{participating researcher}}{2016-2018}
+    \CVSubSubheading
+      {An Interactive Tabletop to Support Surveillance Scenarios with UAVs $|$ \textit{participating researcher}}{2015}
+    \CVSubSubheading
+      {Design for the Next Generation UX-Oriented Mobile Software Platform $|$ \textit{researcher}}{2013}
+  \CVSubHeadingListEnd
+
+
+%-----LEADERSHIP ACTIVITIES----------------------------------------------------
+\section{Leadership Activities}
+  \CVSubHeadingListStart
+    \CVSubSubheading
+      {My Design Lab Student Lead}{Mar 2014 -- Dec 2017}
+    \CVSubSubheading
+      {Ph.D. student representative. Industrial Design department, KAIST}{Sep 2016 - Aug 2017}
+    \CVSubSubheading
+      {Student organizing lead, Design 3.0 Forum}{Aug 2017}
+    \CVSubSubheading
+      {Student organizing lead, ID KAIST 30th anniversary event}{Aug 2017}
+    \CVSubSubheading
+      {K2 KAIST-Kyushu University Workshop}{Feb 2017}
+  \CVSubHeadingListEnd
+
+%-----ACADEMIC SERVICE----------------------------------------------------
+\section{Academic Service}
+  \CVSubHeadingListStart
+    \CVSubSubheading
+      {Academic Paper Review: ACM CHI, ACM Siggraph E-tech, ACM DIS, ACM IDC}{2020}
+    \CVSubSubheading
+      {Academic Paper Review: ACM CHI, ACM Siggraph Asia}{2019}
+    \CVSubSubheading
+      {Academic Paper Review: ACM CHI, ACM CHI Play, ACM CSCW, ACM DIS, ACM TEI, ACM UIST}{2018}
+    \CVSubSubheading
+      {Academic Paper Review: ACM DIS, ACM IDC, ACM C\&C}{2017}
   \CVSubHeadingListEnd
 
 %-----SKILLS-------------------------------------------------------------------
@@ -368,9 +474,11 @@ recommends.
 \section{Skills}
  \begin{itemize}[leftmargin=0.5cm, label={}]
     \small{\item{
-     \textbf{Languages}{: English (Native), Spanish (B1), Finnish (A1)} \\
-     \textbf{Programming}{: Python (NumPy, SciPy, Matplotlib, Pandas), MATLAB, Mathematica, Java} \\
-     \textbf{Document Creation}{: Microsoft Office Suite, LaTex, Markdown} \\
+     \textbf{Languages}{: Korean (Native), English (fluent)} \\
+     \textbf{Programming}{: C\#, Python (NumPy, SciPy, Matplotlib, Pandas), Python, Javascript} \\
+     \textbf{Tools}{: Unity, Adobe Illustrator, Adobe Photoshop, Adobe Premier, Adobe Indesign, Autodesk Fushion 360, Autodesk Revit, Autodesk Dynamo} \\
+     \textbf{Document Creation}{: Microsoft Office Suite, LaTex} \\
+     \textbf{Research Methods}{: design research methods (contextual inquiry, FGI, situated interview, gesture elicitation study), quantitative analysis (SPSS, R), mixed-methods} \\
     }}
  \end{itemize}
     
